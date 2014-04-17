@@ -36,11 +36,14 @@ namespace Dice_Thrower_1000
                 Console.Write("Results:");
 
             //creating for loop to roll the dice the amount of times that is passed through in the parameter of numRolls
+            
+            //creating a new random number generator
             var random = new Random();
             for (var i = 1; i <= numRolls; i++)
             {
-                
+                //randomly selecting a number between 1 and the number of sides
                 var theRoll = random.Next(1, numSides +1);
+               //printing out what the roll is and adding a space in between each new roll
                 Console.Write(theRoll + " ");
             }
         }
